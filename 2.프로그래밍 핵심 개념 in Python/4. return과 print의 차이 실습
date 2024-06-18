@@ -1,0 +1,19 @@
+def first():
+    message = "코드잇"
+    return message
+
+
+def second():
+    message = "codeit"
+    return print(message)
+
+
+def third():
+    message = None
+
+
+# 테스트 코드
+print(first())
+second()
+print(third())
+print(third())
