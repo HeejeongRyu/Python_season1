@@ -1,0 +1,23 @@
+five_m = 50000
+one_m = 10000
+five_t = 5000
+one_t = 1000
+#payment = 지불한 금액 / cost = 가격
+def calculate_change(payment, cost):
+    # 여기에 코드를 작성하세요
+    return_m = payment - cost
+    print("50000원 지폐: {0:.0f}장".format(return_m//five_m))
+    return_m %= five_m
+    print("10000원 지폐: {0:.0f}장".format(return_m//one_m))
+    return_m %= one_m
+    print("5000원 지폐: {0:.0f}장".format(return_m//five_t))
+    return_m %= five_t
+    print("1000원 지폐: {0:.0f}장".format(return_m//one_t))
+    
+    
+
+
+# 테스트 코드
+calculate_change(100000, 33000)
+print()
+calculate_change(500000, 378000)
