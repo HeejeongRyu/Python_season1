@@ -1,0 +1,13 @@
+nm = [1,3,5,14,2]
+
+n_nm = sorted(nm)
+n_nm_r = sorted(nm, reverse=True)
+
+print(n_nm)
+print(n_nm_r)
+
+print(nm)
+
+nm.sort(reverse=True)
+
+print(nm)
