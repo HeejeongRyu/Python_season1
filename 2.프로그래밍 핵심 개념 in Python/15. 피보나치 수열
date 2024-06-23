@@ -1,0 +1,21 @@
+# 여기에 코드를 작성하세요
+a, b = 1, 1
+cnt = 50
+n = 2
+
+print(a)
+print(b)
+
+while n < cnt  : 
+    # 튜플 언패킹
+    # a, b = b, a + b
+    temp = a
+    a = b
+    b = temp + b
+
+    print(b)
+    n += 1
+
+            
+            
+    
