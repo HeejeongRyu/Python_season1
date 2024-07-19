@@ -1,0 +1,18 @@
+import random
+
+corr = random.randint(1,20)
+chk = True
+
+for i in range(4,1,-1) :
+    inp = int(input(f"기회가 {i}번 남았습니다. 1-20 사이의 숫자를 맞혀 보세요:"))
+    if corr == inp :
+        print(f"축하합니다. {i}번만에 숫자를 맞히셨습니다.")
+        chk = False
+        break
+    if corr > inp :
+        print("Down")
+    if corr < inp :
+        print("Up")
+
+if chk :
+    print(f"아쉽습니다. 정답은 {corr}였습니다.")
