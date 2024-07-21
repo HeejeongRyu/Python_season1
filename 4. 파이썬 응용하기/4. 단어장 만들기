@@ -1,0 +1,8 @@
+with open('new_file.txt', "a") as f :
+    while True :
+        en = input("영어 단어를 입력하세요:")
+        if en == 'q' :
+            break
+        ko = input("한국어뜻을 입력하세요:")
+        
+        f.write(f"{en}: {ko}")
