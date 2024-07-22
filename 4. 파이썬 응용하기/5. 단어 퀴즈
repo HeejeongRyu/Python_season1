@@ -1,0 +1,8 @@
+with open('vocabulary.txt', "r") as f :
+    for i in f:
+        q_a = i.strip().split();
+        ans = input(f"{q_a[0]}:")
+        if q_a[1] == ans :
+            print("맞았습니다!")
+        else :
+            print(f"아쉽습니다. 정답은 {q_a[1]} 입니다.")
